@@ -1,0 +1,43 @@
+{
+  "name": "antigravity4lark",
+  "version": "1.0.0",
+  "description": "Two-way Feishu / Lark multi-agent bridge and master controller for Google Antigravity desktop (SQLite + Transcript + agentapi + Electron CDP).",
+  "type": "module",
+  "main": "feishu.mjs",
+  "bin": {
+    "ag-ctl": "./ag-ctl.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Keffee/Antigravity4Lark.git"
+  },
+  "scripts": {
+    "start": "node feishu.mjs",
+    "feishu": "node feishu.mjs",
+    "ctl": "node ag-ctl.mjs",
+    "list": "node ag-ctl.mjs list",
+    "status": "node ag-ctl.mjs status",
+    "test": "node --test test/*.test.mjs",
+    "antigravity:cdp": "./start-antigravity.sh",
+    "launcher:install": "./install-launcher.sh",
+    "service:install": "./service.sh install",
+    "service:uninstall": "./service.sh uninstall",
+    "service:status": "./service.sh status",
+    "service:logs": "./service.sh logs",
+    "service:restart": "./service.sh restart"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "antigravity",
+    "feishu",
+    "lark",
+    "agent",
+    "multi-agent",
+    "cdp",
+    "sqlite",
+    "bot"
+  ],
+  "license": "MIT"
+}
